@@ -1,0 +1,75 @@
+@font-face { 
+	font-family: 'myFont'; 
+	src: url('futurabt-book-opentype.otf');
+ }
+ 
+html {height: 100%}
+
+body {
+	height: 100%; 
+	font-family: myFont, Fallback, sans-serif;
+	background-color: #464b4f;
+}
+
+.webgl-player {
+	width: 960px; height: 600px
+}
+
+/* default text */
+p {font-size: 2em; margin: 0; padding: 0; line-height: 17pt; color: #FFF}
+a:link, a:visited {color: #FF7E00; text-decoration: none}
+a:hover {color: #aaa; text-decoration: underline}
+
+/* Content */
+
+.links {
+  float: left;
+  width: 80px;
+  padding: 5px;
+  margin-right: 10px;
+  border-right-color:#aaa;
+  border-right-width: 2px;
+  border-right-style: dashed;
+}
+
+.home-icon {
+	display: block;
+	padding: 0;
+	margin: 25px 0 0 195px;
+	width: 700px;
+}
+
+.home-icon2 {
+	display: block;
+	padding: 0;
+	margin: 25px 0 0 0px;
+	width: 600px;
+}
+
+.main-layout {margin: 0 auto; width: 900px}
+
+.content {
+	margin: 20px auto;
+	padding: 0 100px;
+	width: 1000px;
+}
+
+
+.content p {
+	font-size: 1em; 
+	margin: 0; 
+	padding: 0; 
+	line-height: 18pt; 
+	color: #FFF;
+	text-align: justify;
+	text-shadow: 2px 2px 3px #000;
+}
+
+h1 {
+	font-size: 1.4em;
+	color: #FFF; 
+	margin: 0 0 25px 0px; 
+	font-weight: 500;
+	text-shadow: 2px 2px 3px #000;
+}
+
