@@ -1,75 +1,134 @@
-@font-face { 
-	font-family: 'myFont'; 
-	src: url('futurabt-book-opentype.otf');
- }
- 
-html {height: 100%}
+@font-face {
+    font-family: 'myFont';
+    src: url('futurabt-book-opentype.otf');
+}
 
+html,
 body {
-	height: 100%; 
-	font-family: myFont, Fallback, sans-serif;
-	background-color: #464b4f;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: myFont, Fallback, sans-serif;
+    background-color: #464b4f;
 }
 
 .webgl-player {
-	width: 960px; height: 600px
+    width: 960px;
+    height: 600px
 }
 
+
 /* default text */
-p {font-size: 2em; margin: 0; padding: 0; line-height: 17pt; color: #FFF}
-a:link, a:visited {color: #FF7E00; text-decoration: none}
-a:hover {color: #aaa; text-decoration: underline}
+
+p {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    line-height: 17pt;
+    color: #FFF
+}
+
+a:link,
+a:visited {
+    color: #00c3ff;
+    text-decoration: none
+}
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    background-color: #79bbff;
+    border-radius: 6px;
+    border: 1px solid #84bbf3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+    background-color: #378de5;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
 
 /* Content */
 
+#root {
+    height: 100%;
+}
+
 .links {
-  float: left;
-  width: 80px;
-  padding: 5px;
-  margin-right: 10px;
-  border-right-color:#aaa;
-  border-right-width: 2px;
-  border-right-style: dashed;
+    float: left;
+    width: 120px;
+    height: 100%;
+    background-color: #565656;
+    margin-right: 20px;
+    border-right-color: #aaa;
+    border-right-width: 2px;
+    border-right-style: ridge;
 }
 
-.home-icon {
-	display: block;
-	padding: 0;
-	margin: 25px 0 0 195px;
-	width: 700px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    width: 120px;
 }
 
-.home-icon2 {
-	display: block;
-	padding: 0;
-	margin: 25px 0 0 0px;
-	width: 600px;
+li a {
+    display: block;
+    color: #000;
+    padding: 8px;
+    text-decoration: none;
 }
 
-.main-layout {margin: 0 auto; width: 900px}
+
+/* Change the link color on hover */
+
+li a:hover {
+    background-color: #999;
+    color: white;
+}
+
+.main-layout {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 
 .content {
-	margin: 20px auto;
-	padding: 0 100px;
-	width: 1000px;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 20px 0;
 }
 
-
 .content p {
-	font-size: 1em; 
-	margin: 0; 
-	padding: 0; 
-	line-height: 18pt; 
-	color: #FFF;
-	text-align: justify;
-	text-shadow: 2px 2px 3px #000;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    line-height: 18pt;
+    color: #FFF;
+    text-align: justify;
+    text-shadow: 2px 2px 3px #000;
 }
 
 h1 {
-	font-size: 1.4em;
-	color: #FFF; 
-	margin: 0 0 25px 0px; 
-	font-weight: 500;
-	text-shadow: 2px 2px 3px #000;
+    font-size: 1.4em;
+    color: #FFF;
+    margin: 0 0 25px 0px;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px #000;
 }
-

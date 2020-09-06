@@ -21,11 +21,11 @@ export default function App() {
             <li>
               <Link to="/about">About</Link>
             </li>
-{/*             <li>
+            {/*             <li>
               <Link to="/topics">Topics</Link>
             </li> */}
             <li>
-              <Link to="/webgl">WebGL</Link>
+              <Link to="/webgl">Demo</Link>
             </li>
           </ul>
         </div>
@@ -33,7 +33,7 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-{/*           <Route path="/topics">
+          {/*           <Route path="/topics">
             <Topics />
           </Route> */}
           <Route path="/webgl">
@@ -88,14 +88,41 @@ function About() {
 }
 
 function WebGL() {
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <div>
       <div class="content">
-        <h1>WebGL</h1>
+        <h1>WebGL </h1>
+
+        <button class="myButton" onClick={refreshPage}><p>Launch demo</p></button>
+
+        <div class="webgl-content">
+          <div id="unityContainer" class="webgl-player"></div>
+        </div>
+
+        {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Launch demo modal
+        </button>
       </div>
 
-      <div class="webgl-content">
-        <div id="unityContainer" class="webgl-player"></div>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="webgl-content">
+                <div id="unityContainer" class="webgl-player"></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>*/}
       </div>
     </div>
 
